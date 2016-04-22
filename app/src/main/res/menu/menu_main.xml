@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu1"
+        android:title="MUNU1"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionLayout="@layout/menu_layout"/>
+    <item android:id="@+id/menu2"
+        android:title="MUNU2"
+        android:icon="@android:drawable/ic_input_get"
+        android:orderInCategory="200"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu3"
+        android:title="MUNU3"
+        android:icon="@android:drawable/ic_input_delete"
+        android:orderInCategory="300"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/menu_sub_1"
+                android:orderInCategory="400"
+                android:title="SM1"
+                />
+            <item
+                android:id="@+id/menu_sub_2"
+                android:orderInCategory="500"
+                android:title="SM1"
+                />
+            <item
+                android:id="@+id/menu_sub_3"
+                android:orderInCategory="600"
+                android:title="SM1"
+                />
+
+
+        </menu>
+    </item>
+</menu>
